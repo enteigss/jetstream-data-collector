@@ -1,0 +1,36 @@
+{
+  "name": "bluesky-data-collector",
+  "version": "0.1.0",
+  "description": "Data collection service for Bluesky feed ranking",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.6.24",
+    "@atproto/lexicon": "^0.3.0",
+    "@atproto/oauth-client-node": "^0.2.11",
+    "@atproto/repo": "^0.3.0",
+    "@atproto/xrpc-server": "^0.3.0",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "kysely": "^0.27.6",
+    "node-cron": "^3.0.3",
+    "pg": "^8.11.0",
+    "pg-promise": "^11.5.0",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.0",
+    "@types/pg": "^8.10.2",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
